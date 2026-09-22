@@ -20,7 +20,7 @@ function chequearResultado() {
   if (numeroIngresado === numeroAzar) {
     mensaje.textContent = "!Felicitaciones! !Has adivinado el numero!";
     mensaje.style.color = "green";
-    numeroEntrada.ariaDisabled = true;
+    numeroEntrada.disabled = true;
   } else if (numeroIngresado < numeroAzar) {
     mensaje.textContent = "!Mas alto! !El numero es mayor al que dijiste!";
     mensaje.style.color = "red";
